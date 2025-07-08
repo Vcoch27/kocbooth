@@ -9,8 +9,8 @@ export const Footer = () => {
         <MoveRight />
         Made with ❤️ by{" "}
         <Button asChild variant={"link"} className="h-auto p-0 text-xl">
-          <Link href="https://linktr.ee/giraldonainggolan" target="_blank">
-            Giraldo Nainggolan
+          <Link href="https://github.com/Vcoch27" target="_blank">
+            Vcoch27
           </Link>
         </Button>
       </div>

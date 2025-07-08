@@ -61,7 +61,7 @@ export const Editor = () => {
         setTimeout(() => reject(new Error("Dom-to-image timed out")), 10000),
       );
 
-      const scale = 2; // Double the size
+      const scale = 1; // Double the size
 
       // Create options object
       const options = {
@@ -98,7 +98,7 @@ export const Editor = () => {
 
       // Create download link
       const link = document.createElement("a");
-      link.download = "bubblybooth-photostrip.png";
+      link.download = "KocBooth-photostrip.png";
       link.href = dataUrl;
       document.body.appendChild(link);
       link.click();

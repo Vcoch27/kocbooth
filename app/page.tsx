@@ -1,4 +1,4 @@
-import hero from "@/public/hero.png";
+import hero from "@/public/cocphotobooth.png";
 
 import { Button } from "@/components/ui/button";
 import { Camera, Upload } from "lucide-react";
@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <main className="space-y-5 place-self-center">
       <h1 className="font-believe-heart text-center text-3xl md:text-5xl">
-        BubblyBooth
+        KocBooth
       </h1>
       <div className="grid gap-5 md:grid-cols-2">
         <div className="self-center">

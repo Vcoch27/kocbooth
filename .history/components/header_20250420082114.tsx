@@ -19,7 +19,7 @@ export const Header = () => {
   return (
     <header className="flex items-center justify-between p-5">
       <Link href="/" className="font-sail">
-        BubblyBooth
+        KocBooth
       </Link>
 
       <Dialog>
@@ -33,7 +33,7 @@ export const Header = () => {
             <DialogTitle className="text-3xl">
               Welcome to Bubbly Booth! 🎉📸
             </DialogTitle>
-            <DialogDescription>What is bubblybooth?</DialogDescription>
+            <DialogDescription>What is KocBooth?</DialogDescription>
           </DialogHeader>
           <div className="space-y-5 text-center text-xl/relaxed sm:text-left">
             <p>
