@@ -96,13 +96,49 @@ export const Editor = () => {
         throw new Error("Invalid data URL returned");
       }
 
-      // Create download link
-      const link = document.createElement("a");
-      link.download = "KocBooth-photostrip.png";
-      link.href = dataUrl;
-      document.body.appendChild(link);
-      link.click();
-      document.body.removeChild(link);
+      if (/Mobi|Android/i.test(navigator.userAgent)) {
+        // Nếu là thiết bị di động, hiển thị ảnh để người dùng tự lưu
+        const img = document.createElement("img");
+        img.src = dataUrl;
+        img.style.maxWidth = "90vw";
+        img.style.maxHeight = "70vh";
+        img.style.display = "block";
+        img.style.margin = "30px auto";
+        img.style.border = "2px solid #333";
+        img.alt = "Photostrip";
+        // Thêm hướng dẫn
+        const msg = document.createElement("div");
+        msg.textContent = "Nhấn giữ vào ảnh để lưu về máy";
+        msg.style.textAlign = "center";
+        msg.style.color = "#333";
+        msg.style.fontWeight = "bold";
+        msg.style.marginBottom = "10px";
+        // Hiển thị popup
+        const popup = document.createElement("div");
+        popup.style.position = "fixed";
+        popup.style.top = "0";
+        popup.style.left = "0";
+        popup.style.width = "100vw";
+        popup.style.height = "100vh";
+        popup.style.background = "rgba(0,0,0,0.7)";
+        popup.style.zIndex = "10000";
+        popup.style.display = "flex";
+        popup.style.flexDirection = "column";
+        popup.style.justifyContent = "center";
+        popup.style.alignItems = "center";
+        popup.appendChild(msg);
+        popup.appendChild(img);
+        popup.onclick = () => document.body.removeChild(popup);
+        document.body.appendChild(popup);
+      } else {
+        // Laptop/PC: tự động tải như cũ
+        const link = document.createElement("a");
+        link.download = "KocBooth-photostrip.png";
+        link.href = dataUrl;
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+      }
 
       console.log("Image download initiated successfully");
     } catch (error) {
