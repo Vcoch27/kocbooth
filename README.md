@@ -1,48 +1,5 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-<div align="center">
-
-  <img src="ln.png" alt="logo" width="200" height="auto" />
-  <h1>Awesome Readme Template For Repo</h1>
-  
-  <p>
-    An awesome README template for your projects! 
-  </p>
-  
-  
-<!-- Badges -->
-<p>
-  <a href="https://github.com/GiraldoNainggolan/Photo-Booth/graphs/contributors">
-    <img src="https://img.shields.io/github/contributors/GiraldoNainggolan/Photo-Booth" alt="contributors" />
-  </a>
-  <a href="">
-    <img src="https://img.shields.io/github/last-commit/GiraldoNainggolan/Photo-Booth" alt="last update" />
-  </a>
-  <a href="https://github.com/GiraldoNainggolan/Photo-Booth/network/members">
-    <img src="https://img.shields.io/github/forks/GiraldoNainggolan/Photo-Booth" alt="forks" />
-  </a>
-  <a href="https://github.com/GiraldoNainggolan/Photo-Booth/stargazers">
-    <img src="https://img.shields.io/github/stars/GiraldoNainggolan/Photo-Booth" alt="stars" />
-  </a>
-  <a href="https://github.com/GiraldoNainggolan/Photo-Booth/issues/">
-    <img src="https://img.shields.io/github/issues/GiraldoNainggolan/Photo-Booth" alt="open issues" />
-  </a>
-  <a href="https://github.com/GiraldoNainggolan/Photo-Booth/blob/master/LICENSE">
-    <img src="https://img.shields.io/github/license/GiraldoNainggolan/Photo-Booth.svg" alt="license" />
-  </a>
-</p>
-   
-<h4>
-    <a href="https://github.com/GiraldoNainggolan/Photo-Booth">View Demo</a>
-  <span> · </span>
-    <a href="https://github.com/GiraldoNainggolan/Photo-Booth">Documentation</a>
-  <span> · </span>
-    <a href="https://github.com/GiraldoNainggolan/Photo-Booth/issues/">Report Bug</a>
-  <span> · </span>
-    <a href="https://github.com/GiraldoNainggolan/Photo-Booth/issues/">Request Feature</a>
-  </h4>
-</div>
-
+<h5>Remake Repo</h5>
 <br />
 
 ![Front End](landpage.png)
